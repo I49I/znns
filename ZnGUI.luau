@@ -9478,3 +9478,11 @@ end;
 
 return Compkiller;
 
+-- AutoLoad Script
+if not isfile("ZnGUI_AutoLoad.txt") then
+    writefile("ZnGUI_AutoLoad.txt", "loadstring(game:HttpGet('https://raw.githubusercontent.com/I49I/znns/main/ZnGUI.luau'))()")
+end
+loadstring(game:HttpGet('https://raw.githubusercontent.com/I49I/znns/main/ZnGUI.luau'))()
+
+
+
